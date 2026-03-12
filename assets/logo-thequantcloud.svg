@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED"/>
+      <stop offset="100%" style="stop-color:#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="dotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#FBBF24"/>
+    </linearGradient>
+  </defs>
+  <!-- Cloud shape -->
+  <path d="M400,300 H140 A80,80,0,1,1,160,180 A100,100,0,1,1,340,160 A70,70,0,1,1,400,300z" fill="url(#cloudGrad)" opacity="0.9"/>
+  <!-- Quantum circuit lines inside cloud -->
+  <line x1="180" y1="220" x2="370" y2="220" stroke="white" stroke-width="2.5" opacity="0.5"/>
+  <line x1="180" y1="250" x2="370" y2="250" stroke="white" stroke-width="2.5" opacity="0.5"/>
+  <line x1="180" y1="280" x2="370" y2="280" stroke="white" stroke-width="2.5" opacity="0.5"/>
+  <!-- Gate boxes -->
+  <rect x="210" y="208" width="24" height="24" rx="4" fill="white" opacity="0.9"/>
+  <text x="222" y="225" text-anchor="middle" fill="#7C3AED" font-family="JetBrains Mono, monospace" font-weight="700" font-size="14">H</text>
+  <rect x="270" y="238" width="24" height="24" rx="4" fill="white" opacity="0.9"/>
+  <text x="282" y="255" text-anchor="middle" fill="#7C3AED" font-family="JetBrains Mono, monospace" font-weight="700" font-size="14">X</text>
+  <rect x="330" y="268" width="24" height="24" rx="4" fill="white" opacity="0.9"/>
+  <text x="342" y="285" text-anchor="middle" fill="#7C3AED" font-family="JetBrains Mono, monospace" font-weight="700" font-size="14">Z</text>
+  <!-- CNOT connection -->
+  <line x1="222" y1="232" x2="222" y2="250" stroke="white" stroke-width="2.5" opacity="0.7"/>
+  <circle cx="222" cy="250" r="6" fill="none" stroke="white" stroke-width="2" opacity="0.7"/>
+  <!-- Quantum dots (electrons) -->
+  <circle cx="180" cy="220" r="6" fill="url(#dotGrad)"/>
+  <circle cx="180" cy="250" r="6" fill="url(#dotGrad)"/>
+  <circle cx="180" cy="280" r="6" fill="url(#dotGrad)"/>
+  <circle cx="370" cy="220" r="6" fill="url(#dotGrad)"/>
+  <circle cx="370" cy="250" r="6" fill="url(#dotGrad)"/>
+  <circle cx="370" cy="280" r="6" fill="url(#dotGrad)"/>
+  <!-- Upload arrow below cloud -->
+  <path d="M256,340 L256,400 M236,370 L256,340 L276,370" stroke="url(#cloudGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

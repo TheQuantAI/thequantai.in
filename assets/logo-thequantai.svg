@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="qGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED"/>
+      <stop offset="50%" style="stop-color:#6D28D9"/>
+      <stop offset="100%" style="stop-color:#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="orbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A78BFA"/>
+      <stop offset="100%" style="stop-color:#818CF8"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#FBBF24"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#qGrad)" stroke-width="8" opacity="0.3"/>
+  <!-- Orbital paths -->
+  <ellipse cx="256" cy="256" rx="160" ry="60" fill="none" stroke="url(#orbGrad)" stroke-width="4" transform="rotate(-30,256,256)" opacity="0.6"/>
+  <ellipse cx="256" cy="256" rx="160" ry="60" fill="none" stroke="url(#orbGrad)" stroke-width="4" transform="rotate(30,256,256)" opacity="0.6"/>
+  <ellipse cx="256" cy="256" rx="160" ry="60" fill="none" stroke="url(#orbGrad)" stroke-width="4" transform="rotate(90,256,256)" opacity="0.6"/>
+  <!-- Nucleus -->
+  <circle cx="256" cy="256" r="40" fill="url(#qGrad)"/>
+  <!-- Q letter in nucleus -->
+  <text x="256" y="270" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="40">Q</text>
+  <!-- Orbital electrons -->
+  <circle cx="136" cy="187" r="12" fill="url(#glowGrad)"/>
+  <circle cx="376" cy="325" r="12" fill="url(#glowGrad)"/>
+  <circle cx="256" cy="96" r="12" fill="url(#glowGrad)"/>
+  <circle cx="256" cy="416" r="12" fill="url(#glowGrad)"/>
+  <circle cx="136" cy="325" r="10" fill="url(#glowGrad)" opacity="0.7"/>
+  <circle cx="376" cy="187" r="10" fill="url(#glowGrad)" opacity="0.7"/>
+  <!-- Glow effects on electrons -->
+  <circle cx="136" cy="187" r="20" fill="url(#glowGrad)" opacity="0.15"/>
+  <circle cx="376" cy="325" r="20" fill="url(#glowGrad)" opacity="0.15"/>
+  <circle cx="256" cy="96" r="20" fill="url(#glowGrad)" opacity="0.15"/>
+</svg>
