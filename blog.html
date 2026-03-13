@@ -44,24 +44,36 @@
     <section class="section" style="padding-top: 40px;">
         <div class="container">
             <div class="blog-grid">
+                <article class="blog-card" id="quantstudio-launch">
+                    <span class="blog-meta">Product Launch</span>
+                    <h3>QuantStudio v0.1 — A Web IDE for Quantum Computing</h3>
+                    <p>Today we're launching QuantStudio, a full-featured browser-based quantum development environment. Built with Next.js, Monaco Editor, and our own QuantSDK backend, it brings quantum circuit development to your browser — no local setup required.</p>
+                    <p><strong>What's included:</strong> Monaco code editor with QuantSDK autocomplete, SVG circuit visualization, interactive result histograms with counts/probability toggle, 16 ready-to-run circuit templates across 7 categories (entanglement, algorithms, transforms, protocols, variational, utility, QML), backend comparison dashboard with 8 quantum backends, user authentication, and save/load circuit management.</p>
+                    <p><strong>Under the hood:</strong> The frontend is React 19 + Next.js 16 with Zustand state management and TanStack Query. The execution backend is FastAPI running QuantSDK in a sandboxed Python environment. Every circuit you write in the editor is sent to the backend, executed on our simulator, and results flow back to the rich visualization panel in real-time.</p>
+                    <span class="blog-link">Published: March 2026</span>
+                </article>
+
                 <article class="blog-card" id="quant-sdk-v01">
                     <span class="blog-meta">Release</span>
                     <h3>Introducing QuantSDK v0.1</h3>
-                    <p>QuantSDK v0.1 ships with 50+ gates, backend interoperability, typed APIs, and 22 practical notebooks for fast onboarding.</p>
+                    <p>QuantSDK v0.1 is our open-source quantum development kit — a clean, Pythonic SDK that lets you write quantum circuits once and run them on any backend. It ships with 50+ quantum gates, a high-performance statevector simulator, and seamless interop with Qiskit, Cirq, PennyLane, and OpenQASM.</p>
+                    <p><strong>By the numbers:</strong> 658 tests passing, 22 Jupyter example notebooks covering everything from Bell states to variational algorithms, full MkDocs documentation with API reference, tutorials, and getting-started guides. The SDK supports framework import/export, GPU simulation via cuQuantum, and backend adapters for IBM Quantum and IonQ.</p>
+                    <p>Install it now: <code style="background:var(--gray-800);padding:2px 8px;border-radius:4px;font-family:var(--font-mono);">pip install quantsdk</code></p>
                     <span class="blog-link">Published: March 2026</span>
                 </article>
 
                 <article class="blog-card" id="quantcloud-roadmap">
                     <span class="blog-meta">Roadmap</span>
                     <h3>TheQuantCloud architecture and rollout plan</h3>
-                    <p>How backend adapters, routing intelligence, and cloud orchestration fit together in our phase-wise execution model.</p>
+                    <p>TheQuantCloud is our "AWS for Quantum" — a hardware-agnostic, AI-first cloud platform for quantum computing. The architecture follows a layered design: QuantSDK at the foundation (open-source), QuantStudio as the developer experience layer, and the cloud platform providing orchestration, intelligent routing, and enterprise features on top.</p>
+                    <p><strong>Phase 1 progress:</strong> Sprint 1 (Core Foundation) and Sprint 2 (SDK & Studio Launch) are complete. We've built 8 backend adapters covering simulators (CPU, GPU, noisy) and real QPU providers (IBM, IonQ, Rigetti, Quantinuum). Sprint 3 targets the full cloud beta with Kubernetes orchestration, job queuing, QuantRouter ML model, and Stripe/Razorpay billing.</p>
                     <span class="blog-link">Published: March 2026</span>
                 </article>
 
                 <article class="blog-card" id="production-workflows">
                     <span class="blog-meta">Operations</span>
                     <h3>From notebooks to production workflows</h3>
-                    <p>Best practices for making quantum workloads testable, observable, and ready for production-grade environments.</p>
+                    <p>Moving quantum workloads from Jupyter notebook experiments to reliable production systems requires tooling that most platforms lack. Our approach: sandboxed execution with resource limits, structured result objects with metadata (circuit depth, gate count, entropy), export capabilities (JSON, CSV, SVG), and a backend comparison system for informed hardware selection.</p>
                     <span class="blog-link">Published: March 2026</span>
                 </article>
             </div>

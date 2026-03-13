@@ -66,7 +66,7 @@
             <div class="hero-glow"></div>
         </div>
         <div class="container hero-content">
-            <div class="hero-badge">🚀 QuantSDK v0.1.0 — Now Open Source</div>
+            <div class="hero-badge">🚀 QuantSDK v0.1.0 + QuantStudio IDE — Live Now</div>
             <h1>Making Quantum Computing<br><span class="gradient-text">Accessible to Every Developer</span></h1>
             <p class="hero-subtitle">We're building the infrastructure layer that bridges today's classical world with tomorrow's quantum advantage. Write once, run anywhere — from simulators to real quantum hardware.</p>
             <div class="hero-actions">
@@ -81,9 +81,9 @@
             </div>
             <div class="hero-stats">
                 <div class="stat"><span class="stat-value">50+</span><span class="stat-label">Quantum Gates</span></div>
-                <div class="stat"><span class="stat-value">272</span><span class="stat-label">Tests Passing</span></div>
+                <div class="stat"><span class="stat-value">658</span><span class="stat-label">Tests Passing</span></div>
                 <div class="stat"><span class="stat-value">22</span><span class="stat-label">Example Notebooks</span></div>
-                <div class="stat"><span class="stat-value">100%</span><span class="stat-label">Open Source</span></div>
+                <div class="stat"><span class="stat-value">8</span><span class="stat-label">Backend Adapters</span></div>
             </div>
         </div>
     </section>
@@ -97,6 +97,12 @@
                 <p class="section-desc">Updates on QuantSDK releases, platform milestones, and practical quantum engineering insights.</p>
             </div>
             <div class="blog-grid">
+                <a class="blog-card" href="/blog.html#quantstudio-launch">
+                    <span class="blog-meta">Product Launch</span>
+                    <h3>QuantStudio v0.1 — Web IDE for Quantum</h3>
+                    <p>A full-featured browser-based IDE with Monaco editor, 16 circuit templates, real-time visualization, and 8 backend adapters.</p>
+                    <span class="blog-link">Read post →</span>
+                </a>
                 <a class="blog-card" href="/blog.html#quant-sdk-v01">
                     <span class="blog-meta">Engineering</span>
                     <h3>Introducing QuantSDK v0.1</h3>
@@ -107,12 +113,6 @@
                     <span class="blog-meta">Platform</span>
                     <h3>TheQuantCloud roadmap and architecture</h3>
                     <p>How we are building a cloud-native quantum platform with routing, observability, and developer-first tooling.</p>
-                    <span class="blog-link">Read post →</span>
-                </a>
-                <a class="blog-card" href="/blog.html#production-workflows">
-                    <span class="blog-meta">Research</span>
-                    <h3>From circuits to production workflows</h3>
-                    <p>A deep dive into making quantum workloads reliable, testable, and operationally safe at scale.</p>
                     <span class="blog-link">Read post →</span>
                 </a>
             </div>
@@ -166,12 +166,12 @@
                     <img src="assets/logo-thequantcloud.svg" alt="TheQuantCloud" width="64" height="64" class="vertical-logo">
                     <h3>TheQuantCloud</h3>
                     <p class="vertical-tagline">Quantum Computing as a Service</p>
-                    <p>A unified cloud platform for quantum development — from writing your first quantum circuit to deploying production workloads across multiple quantum backends. Includes the open-source QuantSDK, web-based IDE, and intelligent backend routing.</p>
+                    <p>A unified cloud platform for quantum development — from writing your first quantum circuit to deploying production workloads across multiple quantum backends. QuantSDK (open-source) and QuantStudio (web IDE) are now live.</p>
                     <ul class="vertical-features">
-                        <li>QuantSDK — Open-source quantum development kit</li>
-                        <li>QuantStudio — Web-based quantum IDE</li>
-                        <li>Multi-backend orchestration & smart routing</li>
-                        <li>Enterprise-grade monitoring & billing</li>
+                        <li>QuantSDK v0.1 — Open-source, 50+ gates, 658 tests ✅</li>
+                        <li>QuantStudio v0.1 — Web IDE with Monaco editor, 16 templates ✅</li>
+                        <li>8 backend adapters — CPU, GPU, IBM, IonQ, Rigetti, Quantinuum ✅</li>
+                        <li>Cloud platform with intelligent routing — Coming Q3 2026</li>
                     </ul>
                     <a href="https://thequantcloud.com" class="btn btn-primary">Visit TheQuantCloud →</a>
                 </div>
@@ -278,28 +278,28 @@ qasm_string = circuit.to_openqasm()</code></pre>
                 <p class="section-desc">We're on an ambitious journey to build the definitive quantum computing platform. Here's what's coming.</p>
             </div>
             <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Q1 2026 — Done ✅</span>
+                        <h4>QuantSDK v0.1 Launch</h4>
+                        <p>Open-source SDK with 50+ gates, framework interop (Qiskit, Cirq, PennyLane, OpenQASM), local + IBM backends, full MkDocs documentation, and 22 example notebooks. 658 tests passing.</p>
+                    </div>
+                </div>
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Q1-Q2 2026 — Done ✅</span>
+                        <h4>QuantStudio v0.1 & 8 Backend Adapters</h4>
+                        <p>Full web IDE with Monaco editor, SVG circuit visualizer, result histograms, 16 circuit templates, save/load, auth. 8 backends: CPU Simulator, GPU (cuQuantum), IBM Brisbane, IonQ Harmony, IonQ Aria, Rigetti Ankaa-2, Quantinuum H1-1, Noisy Simulator.</p>
+                    </div>
+                </div>
                 <div class="timeline-item active">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Q1 2026 — Now</span>
-                        <h4>QuantSDK v0.1 Launch</h4>
-                        <p>Open-source SDK with 50+ gates, framework interop, local + IBM backends, full documentation, and 22 example notebooks. PyPI package ready.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Q2 2026</span>
-                        <h4>QuantStudio & Expanded Backends</h4>
-                        <p>Web-based quantum IDE with real-time circuit visualization. IonQ and Rigetti backend adapters. TheQuantCloud marketing site launch.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Q3 2026</span>
+                        <span class="timeline-date">Q3 2026 — In Progress</span>
                         <h4>TheQuantCloud Beta</h4>
-                        <p>Full cloud platform beta with intelligent backend routing, job queuing, team collaboration, and ML-powered circuit optimization.</p>
+                        <p>Full cloud platform beta with intelligent backend routing (QuantRouter), Kubernetes orchestration, job queuing, team collaboration, and ML-powered circuit optimization.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -307,7 +307,7 @@ qasm_string = circuit.to_openqasm()</code></pre>
                     <div class="timeline-content">
                         <span class="timeline-date">Q4 2026</span>
                         <h4>General Availability</h4>
-                        <p>Production launch with enterprise tier, billing, SLA guarantees, and SOC 2 compliance. TheQuantDefense private beta for select defense partners.</p>
+                        <p>Production launch with enterprise tier, billing (Stripe + Razorpay), SLA guarantees, and SOC 2 compliance. TheQuantDefense private beta for select defense partners.</p>
                     </div>
                 </div>
             </div>

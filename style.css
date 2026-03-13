@@ -534,6 +534,22 @@ body {
     border-color: var(--violet-400);
     box-shadow: 0 0 20px rgba(124,58,237,0.4);
 }
+.timeline-item.completed .timeline-marker {
+    background: #059669;
+    border-color: #34D399;
+    box-shadow: 0 0 16px rgba(5,150,105,0.3);
+}
+.timeline-item.completed .timeline-marker::after {
+    content: '✓';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
 .timeline-date {
     display: inline-block;
     font-size: 0.8rem;
