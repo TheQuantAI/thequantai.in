@@ -628,6 +628,52 @@ body {
 }
 .team-hiring a:hover { text-decoration: underline; }
 
+/* ─── Blog ─── */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+.blog-card {
+    display: block;
+    padding: 28px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: all 0.25s;
+    background: white;
+}
+.blog-card:hover {
+    border-color: var(--violet-200);
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-3px);
+}
+.blog-meta {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--violet-600);
+    margin-bottom: 10px;
+}
+.blog-card h3 {
+    color: var(--gray-900);
+    font-size: 1.1rem;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+.blog-card p {
+    color: var(--gray-500);
+    font-size: 0.94rem;
+    margin-bottom: 14px;
+}
+.blog-link {
+    color: var(--violet-600);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
 /* ─── CTA ─── */
 .cta-section {
     padding: 80px 0;
