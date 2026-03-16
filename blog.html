@@ -44,6 +44,24 @@
     <section class="section" style="padding-top: 40px;">
         <div class="container">
             <div class="blog-grid">
+                <article class="blog-card" id="quantcloud-beta-launch">
+                    <span class="blog-meta">Launch</span>
+                    <h3>Introducing TheQuantCloud Beta — Free Quantum Computing in the Cloud</h3>
+                    <p>Today we're opening <strong>TheQuantCloud Beta</strong> to the public — a free cloud platform for quantum circuit execution. Sign up, generate an API key, and run quantum circuits on 5 simulator backends from your Python code or our web IDE.</p>
+                    <p><strong>What's included for free:</strong> 60 minutes of simulator time per month, $50 in beta credits, 10 QPU tasks/month, 5 quantum backends (Qiskit Aer, Cirq, PennyLane, local NumPy, and GPU simulator), unlimited saved circuits, and 5 API keys per account. No credit card required.</p>
+                    <p><strong>How it works:</strong> Submit a circuit (OpenQASM or QuantSDK Python) to our REST API at <code style="background:var(--gray-800);padding:2px 8px;border-radius:4px;font-family:var(--font-mono);">api.thequantcloud.com</code>. The QuantRouter analyzes your circuit's features — qubit count, depth, gate types — and automatically selects the best simulator backend. Results come back with measurement counts, probabilities, and execution metadata.</p>
+                    <p><strong>Architecture:</strong> A FastAPI modular monolith with 19 API endpoints, deployed on Railway ($5/month). PostgreSQL on Supabase (free tier) for all persistence — users, circuits, jobs, results, usage tracking, and routing logs. Supabase Auth handles authentication (email + GitHub OAuth). The entire platform costs under $7/month to run — 99.5% cheaper than the original AWS specification.</p>
+                    <p><strong>Get started in 60 seconds:</strong></p>
+                    <ol style="padding-left: 1.2em; color: var(--gray-300); font-size: 0.95rem; line-height: 1.7;">
+                        <li>Sign up at <a href="https://studio.thequantcloud.com/signup" style="color:#a78bfa;">studio.thequantcloud.com/signup</a></li>
+                        <li>Generate an API key from the <a href="https://studio.thequantcloud.com/connect" style="color:#a78bfa;">Connect page</a></li>
+                        <li><code style="background:var(--gray-800);padding:2px 8px;border-radius:4px;font-family:var(--font-mono);">pip install thequantsdk</code></li>
+                        <li>Set <code style="background:var(--gray-800);padding:2px 8px;border-radius:4px;font-family:var(--font-mono);">QUANTCLOUD_API_KEY</code> and run your circuit</li>
+                    </ol>
+                    <p><strong>What's next:</strong> Real QPU backends (IBM Quantum, IonQ) via cloud credits, a Stripe-powered billing system, and the ML-trained QuantRouter v2 that learns from actual execution outcomes. Follow us at <a href="https://twitter.com/TheQuantAI" style="color:#a78bfa;">@TheQuantAI</a> for updates.</p>
+                    <span class="blog-link">Published: March 2026</span>
+                </article>
+
                 <article class="blog-card" id="quantstudio-launch">
                     <span class="blog-meta">Product Launch</span>
                     <h3>QuantStudio v0.1 — A Web IDE for Quantum Computing</h3>
